@@ -1,4 +1,174 @@
-@import url("./config.css");
-@import url("./blocks/about.css");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400&family=Sora:wght@100..800&display=swap");
+@font-face {
+  font-family: "roboto-oh5";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roboto-oh5";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roboto-oh5";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "roboto-oh5";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
+}
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: #353535;
+  color: #fff;
+}
+
+input,
+textarea {
+  outline: none;
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  border-color: red;
+}
+input:required:valid,
+textarea:required:valid {
+  border-color: green;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #353535;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400&family=Sora:wght@100..800&display=swap');
+
+
+$textcolor: #353535; // Text Color
+$titlefont: "Cormorant Upright", serif; // User Font Family
+$textfont: "Sora", sans-serif; // System Font Family*/
+.about {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about__video {
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16/9;
+}
+@media (max-width: 1024px) {
+  .about__video {
+    width: 100%;
+    max-width: 100%;
+    margin: 30px 0;
+  }
+}
+
+.about__video-iframe {
+  border-radius: 15px;
+  border: none;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.about__title {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 69px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media (max-width: 1024px) {
+  .about__title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .about__title {
+    font-size: 50px;
+  }
+}
+
+.content__text {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  width: 615px;
+  margin: 30px 140px 30px 0;
+}
+@media (max-width: 1024px) {
+  .content__text {
+    width: 100%;
+    max-width: 615px;
+    margin: 30px 0;
+    text-align: center;
+  }
+}
+
+.content__inner-text {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 141%;
+  letter-spacing: 4%;
+  text-align: left;
+  color: #353535;
+  margin-bottom: 25px;
+}
+
+.content__inner-link {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-decoration: none;
+  padding: 15px 0;
+  color: #353535;
+}
+
+.content__inner-image {
+  width: 615px;
+  height: auto;
+  margin-top: 54px;
+}
+@media (max-width: 1024px) {
+  .content__inner-image {
+    width: 100%;
+    max-width: 615px;
+    height: auto;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

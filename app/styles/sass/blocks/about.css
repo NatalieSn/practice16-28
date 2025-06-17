@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400&family=Sora:wght@100..800&display=swap");
-@import url("../config.css");
 .about {
   width: 100%;
   margin: 0 auto;
@@ -24,19 +23,20 @@
   max-width: 720px;
   aspect-ratio: 16/9;
 }
-.about__video iframe {
-  border-radius: 15px;
-  border: none;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
 @media (max-width: 1024px) {
   .about__video {
     width: 100%;
     max-width: 100%;
     margin: 30px 0;
   }
+}
+
+.about__video-iframe {
+  border-radius: 15px;
+  border: none;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .about__title {
@@ -73,7 +73,7 @@
   }
 }
 
-.text__p {
+.content__inner-text {
   font-weight: 300;
   font-style: normal;
   font-size: 16px;
@@ -84,7 +84,7 @@
   margin-bottom: 25px;
 }
 
-.text__more {
+.content__inner-link {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -95,15 +95,16 @@
   color: #353535;
 }
 
-.text__img {
+.content__inner-image {
   width: 615px;
   height: auto;
   margin-top: 54px;
 }
 @media (max-width: 1024px) {
-  .text__img {
+  .content__inner-image {
     width: 100%;
-    max-width: 615px; /* Maintain max width for image */
+    max-width: 615px;
+    /* Maintain max width for image */
     height: auto;
   }
 }
