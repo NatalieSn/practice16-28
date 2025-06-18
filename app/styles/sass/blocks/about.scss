@@ -74,7 +74,6 @@
   letter-spacing: 4%;
   text-align: left;
   color: $textcolor;
-  //margin-bottom: 25px;
   margin: 0 25px 25px 30px;
 }
 
@@ -88,8 +87,12 @@
   padding: 15px 0;
   margin-left: 30px;
   color: $textcolor;
-}
 
+  &:hover {
+    color: $hovercolor;
+    transition: 0.3s;
+  }
+}
 .about__content-image {
   width: 615px;
   height: auto;
