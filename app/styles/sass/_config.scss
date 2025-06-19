@@ -1,12 +1,14 @@
 // USER VARIABLES SECTION
 
-$accent: #353535; // Accent Color
+$accent: #418ea3; // Accent Color
 $fontsize: 16px; // Body Font Size
 $textcolor: #353535; // Text Color
-$hovercolor: #418ea3;
 $lineheight: 1.65; // Document Line Height
 $titlefont: "Cormorant Upright", serif; // User Font Family
 $textfont: "Sora", sans-serif; // System Font Family
+$letterspace: 4%;
+$fweightmore: 400; // font-weight: 400;
+$fweight: 300; // font-weight: 300;
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 30px;
